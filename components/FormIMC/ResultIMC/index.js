@@ -12,7 +12,7 @@ export default function ResultIMC(props) {
      */
     function calculateImcDegree() {
         const value = props.result
-        let color = ''
+        let color = '#000'
         let opinion = ''
         if (value >= 30) {
             color = '#c31e1e'

@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native"
 
 const Styles = StyleSheet.create({
     viewContainer: {
-        alignItems: 'center',
+                alignItems: 'center',
         top: 0,
         justifyContent: 'start',
         height: '100%',
@@ -20,6 +20,17 @@ const Styles = StyleSheet.create({
         marginHorizontal: 50,
         textAlign: 'justify',
         marginBottom: 40
+    },
+    references: {
+        width:'85%',
+        height:120,
+        padding:5,
+        marginBottom:20,
+    },
+    referenceItem: {
+        color: '#000',
+        fontSize:12,
+        height: 35,
     }
 })
 

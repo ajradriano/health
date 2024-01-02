@@ -1,6 +1,8 @@
 import React from "react";
 import { Text, View } from "react-native";
 import styles from "./style";
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+
 
 export default function ResultIMC(props) {
     /**
@@ -36,7 +38,10 @@ export default function ResultIMC(props) {
     return (
         <View style={styles.resultContainer}>
             <Text style={styles.messageText}>{props.message}</Text>
-            <Text style={[{ fontWeight: 'bold', fontSize:24, color: calculateImcDegree().color }]}>{props.result} {calculateImcDegree().opinion}</Text>
+            <Text style={[{ fontWeight: 'bold', fontSize:24, color: calculateImcDegree().color }]}>
+                {props.result ? <Icon name='gauge' size={24} color={calculateImcDegree().color} /> : null} &nbsp;
+                {props.result} {calculateImcDegree().opinion}
+            </Text>
         </View>
     )
 }

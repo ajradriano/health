@@ -4,45 +4,65 @@ const styles = StyleSheet.create({
     boxTitle: {
         alignItems: "center",
     },
+    
     textTitle: {
         color: '#1b1a4f',
         fontSize: 18,
         fontWeight: "bold",
         paddingBottom: 10
     },
+    
     label: {
         marginTop: 10,
     },
+    
     input: {
         backgroundColor: '#eee',
-        borderRadius: 7,
+        borderRadius: 14,
         height: 40,
         padding: 10,
     },
+
+    inputError: {
+        color: '#c31e1e',
+        fontSize: 12
+    },  
+
+    inputContainer: {
+        marginTop: 0,
+        marginBottom: 20,
+    },
+    
     buttonContainer: {
+        flexDirection: 'column',
         justifyContent: 'space-evenly',
         alignItems  : 'center',
-        flexDirection: 'row',
         marginTop: 20,
         marginBottom: 20,
     },
+    
     button: {
         justifyContent: 'center',
         alignItems: 'center',
-        borderRadius: 7,
-        height: 32,
-        width: 65,
+        borderRadius: 32,
+        height: 52,
+        width: '100%',
         text: {
             color: '#eee',
             fontWeight: 'bold',
+            fontSize: 24
+        },
+        
+        textBlack: {
+            color: '#000',
+            fontWeight: 'bold',
         }
     },
+    
     confirmButton: {
         backgroundColor: '#1584d3',
     },
-    clearButton: {
-        backgroundColor: '#d36315',
-    },
+
 });
 
 export default styles

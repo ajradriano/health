@@ -7,9 +7,11 @@ const styles = StyleSheet.create({
         alignItems: "center",
         width: '100vw',
     },
+    
     messageText: {
         fontSize: 16,
     },
+    
     imcText: {
         fontSize: 32,
         color: 'black'

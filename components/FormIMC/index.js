@@ -63,6 +63,8 @@ export default function FormIMC() {
     function clear() {
         setHeight(null)
         setWeight(null)
+        setErrorHeight(null)
+        setErrorWeight(null)
         setIMC(null)
         setMessage(defaultMessage)
     }

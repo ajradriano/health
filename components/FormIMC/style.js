@@ -20,7 +20,8 @@ const styles = StyleSheet.create({
         backgroundColor: '#eee',
         borderRadius: 14,
         height: 40,
-        padding: 10,
+        padding: 5,
+        marginBottom: 5,
     },
 
     inputError: {

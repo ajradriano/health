@@ -1,6 +1,10 @@
 import { StyleSheet } from "react-native"
 
 const Styles = StyleSheet.create({
+    gradientBackground: {
+        height: '100%'
+    },
+
     viewContainer: {
                 alignItems: 'center',
         top: 0,

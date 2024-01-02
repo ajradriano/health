@@ -11,4 +11,8 @@ Health é uma aplicação para auxiliar no monitoramento de dados referentes a s
     
 `IMC = A / (P . P)`
 
+
+https://github.com/ajradriano/health/assets/35134863/91a57b5f-f662-459b-8894-11032561db00
+
+
 ---

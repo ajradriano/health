@@ -43,18 +43,32 @@ export default function FormIMC() {
     * @return {void}
     */
     function validate() {
-        if (weight == null || height == null) {
-            height == null ? setErrorHeight('Campo Obriatório.') : setErrorHeight(null)
-            weight == null ? setErrorWeight('Campo Obriatório.') : setErrorWeight(null)
+        const weightRegex = /^(\d+(\.\d{0,2})?)$/; // Permite apenas dígitos e até duas casas decimais
+        const heightRegex = /^(\d+(\.\d{0,2})?)$/;
+
+        if (weight == null || height == null || !weightRegex.test(weight) || !heightRegex.test(height)) {
+            if (height == null || !heightRegex.test(height)) {
+                setErrorHeight('Campo Obrigatório ou valor inválido.');
+            } else {
+                setErrorHeight(null);
+            }
+    
+            if (weight == null || !weightRegex.test(weight)) {
+                setErrorWeight('Campo Obrigatório ou valor inválido.');
+            } else {
+                setErrorWeight(null);
+            }
+    
             setMessage("Valores inválidos para os campos.");
-            Vibration.vibrate() //  Vibra o dispositivo por 1 segundo.
+            Vibration.vibrate(); // Vibra o dispositivo por 1 segundo.
         } else {
-            setErrorHeight(null)
-            setErrorWeight(null)
-            Keyboard.dismiss()
+            setErrorHeight(null);
+            setErrorWeight(null);
+            Keyboard.dismiss();
             calculate();
         }
     }
+    
 
     /** 
     * Funcao que define todos os campos como null e define a mensagem padrão para a variavel message.
